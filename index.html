@@ -12,6 +12,21 @@
     <body >
 
         <style>
+            html, body
+            {
+                border:0;
+                margin:0;
+                padding:0;
+            }
+
+            .bar
+            {
+                width: 35px;
+                height: 5px;
+                background-color: rgb(255, 255, 255);
+                margin: 6px 0;
+            }
+
             .title
             {
                 color: white;
@@ -49,20 +64,55 @@
                 z-index:99;
                 font-family: "TTInterfaces";
                 display: grid;
-                grid-template-columns: 10px 50px 1000px 300px auto;
+                grid-template-columns: 100px 0px 900px 300px auto;
             }
             .image
             {
-                position: sticky;
-                border: none;
-                width: 101.3%;
+                position: static;
+                margin:0;
+                padding:0;
+                border: 0;
+                width: 100%;
                 max-height: 1200px;
-                margin: 0px 0px 0px -1%;
+                z-index:10;
             }
             .main
             {
                 display:grid;
-                grid-template-columns: 20% 60% 20%;
+                grid-template-columns: 8% 92%;
+            }
+
+            .sidebar
+            {
+                border:0;
+                margin:0;
+                padding:0;
+
+                height: 100%;
+                overflow: hidden;
+                background-color: black;
+                float:left;
+                z-index:50;
+            }
+
+            .article
+            {
+                border:0;
+                margin:0;
+                padding:0;
+                width:100%;
+                height:100%;
+                display:grid;
+                grid-template-columns: 33.2% 33.2% 33.2%;
+                grid-template-rows: 420px 420px 420px;
+            }
+
+            .box
+            {
+                padding:5%;
+                margin: 15px;
+                background-color: orange;
+                z-index:30;
             }
 
             body
@@ -73,66 +123,108 @@
             .footer
             {
                 position:relative;
+                border:0;
+                margin:0;
+                padding:0;
                 left:0;
                 bottom:0;
                 right:0;
                 width:100%;
+                height: 100%;
                 background-color:rgb(42, 39, 39);
-                background-position-x:0%;
-                background-position-y:0%;
-                background-repeat:repeat;
-                background-image:none;
-                background-size:auto;
-                background-origin:padding-box;
-                background-clip:border-box;
+                z-index:99;
             }
             
         </style>
 
 
-        <header class="header">
-            <div></div>
-            <div>
+        <header>
+
+            <nav class="header">
+
+                <div style="margin-top:35px; margin-left:35px;">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <div>
                     <a href="index.html" ><img width = "100" src="https://awisdomwithin.files.wordpress.com/2019/07/llama-emoji.png?w=300&h=300" alt="PooP " style="position:fixed;margin-left:2%"></a> 
-            </div>
-            <div>
+                </div>
+
+                <div>
                     <a class="title">Alpaca Website</a>
                     <br>
                     <a class="subtitle"><b>Fan Forum About Alpaca!</b></a>
                     <br>
-            </div>
-            <nav>
+                </div>
+
+                <div></div>
+
             </nav>
-            <div></div>
 
         </header>
 
-        <main>
-            <br><br><br><br>
-            <div class="image">
-                <img class="image" src="https://static.ohga.it/wp-content/uploads/sites/24/2019/02/alpaca.jpg">
+        <main class="main">
+
+            <div class="sidebar"></div>
+
+            <div style="border:0;margin:0;padding:0;width:100%;">
+                <br><br><br><br>
+
+                <div class="image">
+                    <img class="image" src="https://static.ohga.it/wp-content/uploads/sites/24/2019/02/alpaca.jpg">
+                </div>
+
+                <div>
+
+                    <div></div>
+
+                    <div class="article">
+
+                        <div class="box">
+                            <p style="color:red; font-size: medium;">
+                                Ricordati i primi tre numeri naturali, tutto parte da la!
+                                <ul>
+                                    <li><a href="#">uno</a></li>
+                                    <li><a href="#">due</a></li>
+                                    <li><a href="#">tre</a></li>
+                                </ul>
+                            </p>
+                        </div>
+
+                        <div class="box">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/FSKZ4IowkYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="box">
+                            <a href="giphy.gif"><button style="margin:50px;">FAI ESPLODERE LA TERRA</button></a> 
+                        </div>
+
+                        <div class="box"></div>
+
+                        <div class="box"></div>
+
+                        <div class="box"></div>
+
+                        <div class="box"></div>
+
+                        <div class="box"></div>
+
+                        <div class="box"></div>
+
+                    </div>
+
+                </div>
+
             </div>
-            <div class="main">
-                <article>
-                    <p style="color:red; font-size: medium;">
-                        Ricordati i primi tre numeri naturali, tutto parte da la!
-                        <ul>
-                            <li><a href="#">uno</a></li>
-                            <li>due</li>
-                            <li>tre</li>
-                        </ul>
-                    </p>
-                </article>
-                <article style="width:100%">
-                    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/FSKZ4IowkYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </article>
-                <a href="giphy.gif"><button style="margin:50px;">FAI ESPLODERE LA TERRA</button></a> 
-                </article>
-            </div>
+
         </main>
         
         <footer class="footer">
-            <p>I'm hosted with <a href="https://github.com/" target="_blank"><b>GitHub Pages</b>.</a></p>
+            <div>
+                <p>I'm hosted with <a href="https://github.com/" target="_blank"><b>GitHub Pages</b>.</a></p>
+            </div>
         </footer>
 
     </body>
