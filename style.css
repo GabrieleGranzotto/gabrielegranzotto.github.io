@@ -85,7 +85,7 @@ html, body
     left:0;
     width: 200px;
     height: 150px;
-    margin-left:66%;
+    margin-left:71%;
     z-index: 30;
     gap: 10px;
     grid-template-columns: auto auto auto;
@@ -175,6 +175,7 @@ html, body
 .imgbox
 {
     width: 100%;
+    max-height: 300px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -221,7 +222,7 @@ html, body
 
     .social
     {
-        margin-left:68%;
+        margin-left:69%;
     }
 
     .article
@@ -229,7 +230,7 @@ html, body
         margin-top:600px;
         padding-left:15%;
         padding-right:8%;
-        grid-template-columns: repeat(auto-fill,minmax(48%,1fr));
+        grid-template-columns: repeat(auto-fill,minmax(46%,1fr));
     }
 }
 
@@ -247,6 +248,7 @@ html, body
         font-size: 30px;
         margin-left: 50px;
     }
+
     .subtitle
     {
         font-size: 12px;
@@ -266,7 +268,20 @@ html, body
 
     .social
     {   
-        margin-left:50%;
+        width: 160px;
+        height: 80px;
+        margin-left:60%;
+    }
+
+    .socialbox
+    {
+        height: 100px;
+    }
+
+    .imagesocial
+    {
+        margin-left:6px;
+        margin-top:55px;
     }
 
     .article
@@ -282,6 +297,10 @@ html, body
 @media (min-width:2000px)
 {
 
+    .social
+    {   
+        margin-left:66%;
+    }
 
     .article
     {
