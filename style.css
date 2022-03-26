@@ -1,9 +1,16 @@
+*
+{
+    box-sizing: border-box;
+}
+
+
 html, body
 {
     border:0;
     margin:0;
     padding:0;
     background-color: rgb(114, 180, 145);
+    font-family: Arial;
 }
 
 .bar
@@ -75,9 +82,10 @@ html, body
 {
     position:absolute;
     display: grid;
+    left:0;
     width: 200px;
     height: 200px;
-    margin-left:61%;
+    margin-left:65%;
     z-index: 30;
     gap: 10px;
     grid-template-columns: auto auto auto;
@@ -87,14 +95,14 @@ html, body
 {
     background-color: red;
     margin-top:0;
-    height: 180px;
+    height: 150px;
 }
 
 .imagesocial
 {
     position:relative;
     margin-left:6px;
-    margin-top:128px;
+    margin-top:95px;
     width:80%;
     z-index:50;
 }
@@ -111,9 +119,10 @@ html, body
 {
     position:fixed;
     border:0;
-    margin:0;
+    margin-right:0;
     padding:0;
-    width:70px;
+    width:12%;
+    max-width:70px;
     height: 100%;
     background-color: rgb(73, 73, 73);
     z-index:50;
@@ -128,7 +137,7 @@ html, body
     bottom:0;
     margin-top:800px;
     padding-right:5%;
-    padding-left:10%;
+    padding-left:9%;
     width:auto;
     height:auto;
     display:grid;
@@ -158,4 +167,73 @@ html, body
     height: 150px;
     background-color:rgb(42, 39, 39);
     z-index:99;
+}
+
+@media (min-width:768px) and (max-width:1023px)
+{
+
+    .image
+    {
+        height:600px;
+    }
+
+    .social
+    {
+        margin-left:68%;
+    }
+
+    .article
+    {
+        margin-top:600px;
+        padding-left:15%;
+        padding-right:8%;
+        grid-template-columns: repeat(auto-fill,minmax(48%,1fr));
+    }
+}
+
+@media (max-width: 768px)
+{
+
+    .logo
+    {
+        width:50px;
+        margin-left:0.1%;
+    }
+
+    .title
+    {
+        font-size: 30px;
+        margin-left: 50px;
+    }
+    .subtitle
+    {
+        font-size: 12px;
+        margin-left: 75px;
+    }
+
+
+    .menu
+    {
+        margin-left:8px;
+        margin-top:5px;
+    }
+
+    .image
+    {
+        height:300px;
+    }
+
+    .social
+    {   
+        margin-left:50%;
+    }
+
+    .article
+    {
+        margin-top:300px;
+        padding-left:23%;
+        padding-right:15%;
+        grid-template-columns: repeat(auto-fill,minmax(100%,1fr));
+    }
+
 }
