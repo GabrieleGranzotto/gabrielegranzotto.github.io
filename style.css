@@ -9,7 +9,7 @@ html, body
     border:0;
     margin:0;
     padding:0;
-    background-color: rgb(114, 180, 145);
+    background-color: rgb(138, 101, 59);
     font-family: Arial;
 }
 
@@ -27,35 +27,38 @@ html, body
     margin-left:18px;
 }
 
+.titlepage
+{
+    display: inline-flex;
+    margin: auto;
+}
+
 .logo
 {
-    position:fixed;
-    width:80px;
-    margin-left:1%;
+    width:82px;
 }
 
 .title
 {
     color: white;
+    width:auto;
     font-size: 50px;
     font-family: fantasy;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 100px;
+    margin:0;
+    padding:0;
 }
 .subtitle
 {
     color: white;
     font-size: 20px;
     font-family: fantasy;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-left: 115px;
+    margin:0;
+    padding:0;
 }
 
 .header
 {
-    position:fixed !important;
+    position:absolute;
     left:0;
     top:0;
     right:0;
@@ -63,13 +66,13 @@ html, body
     background-color:rgb(42, 39, 39);
     z-index:99;
     font-family: "TTInterfaces";
-    display: grid;
-    grid-template-columns: 100px 0px 900px 300px auto;
+    display: inline-flex;
 }
 .image
 {
     position: fixed;
     display:block;
+    top:0;
     padding-left:3%;
     border: 0;
     width:100%;
@@ -102,7 +105,6 @@ html, body
 .imagesocial
 {
     filter:invert(100%);
-    position:relative;
     margin-left:6px;
     margin-top:95px;
     width:80%;
@@ -116,7 +118,7 @@ html, body
 
 #instagram
 {
-    background-image: linear-gradient(to bottom, violet, indigo, blue, green, yellow, orange, red);
+    background-image: linear-gradient(to top right,orange, red,fuchsia,indigo);
 }
 
 #twitter
@@ -136,6 +138,7 @@ html, body
 {
     position:fixed;
     border:0;
+    top:0;
     margin-right:0;
     padding:0;
     width:12%;
@@ -145,13 +148,22 @@ html, body
     z-index:50;
 }
 
+.container
+{
+    display:grid;
+    grid-template-columns: 70px auto;
+    bottom:0;
+    margin:0;
+    padding:0;
+}
 
 .article
 {
-    position:relative;
-    background-color: rgb(114, 180, 145);
+    position:static;
+    background-color: rgb(138, 101, 59);
     border:0;
     bottom:0;
+    margin-bottom:0;
     margin-top:800px;
     padding-right:5%;
     padding-left:9%;
@@ -159,7 +171,7 @@ html, body
     height:auto;
     display:grid;
     gap: 25px;
-    grid-template-columns: repeat(auto-fill,minmax(30%,1fr));
+    grid-template-columns: repeat(auto-fill,30%);
     z-index: 25;
 }
 
@@ -168,7 +180,7 @@ html, body
     border-radius: 20px;
     aspect-ratio: 1/1;
     transform: translate(0px, -60px);
-    background-color: rgb(17, 0, 255);
+    background-color: #0006B8;
     z-index:30;
 }
 
@@ -212,6 +224,11 @@ html, body
     z-index:99;
 }
 
+.containericon
+{
+    display:none;
+}
+
 @media (min-width:768px) and (max-width:1023px)
 {
 
@@ -230,29 +247,37 @@ html, body
         margin-top:600px;
         padding-left:15%;
         padding-right:8%;
-        grid-template-columns: repeat(auto-fill,minmax(46%,1fr));
+        grid-template-columns: repeat(auto-fill,45%);
     }
+
 }
 
 @media (max-width: 768px)
 {
 
+    .header
+    {
+        display:absolute;
+    }
+
+    .sidebar
+    {
+        display:none;
+    }
+
     .logo
     {
         width:50px;
-        margin-left:0.1%;
     }
 
     .title
     {
         font-size: 30px;
-        margin-left: 50px;
     }
 
     .subtitle
     {
         font-size: 12px;
-        margin-left: 75px;
     }
 
     .menu
@@ -263,33 +288,55 @@ html, body
 
     .image
     {
+        padding-left: 0;
         height:300px;
     }
 
     .social
     {   
-        width: 160px;
-        height: 80px;
-        margin-left:60%;
+        display:none;
     }
 
-    .socialbox
+    .container
     {
-        height: 100px;
-    }
-
-    .imagesocial
-    {
-        margin-left:6px;
-        margin-top:55px;
+        grid-template-columns: 0 auto;
     }
 
     .article
     {
         margin-top:300px;
-        padding-left:23%;
+        padding-left:15%;
         padding-right:15%;
-        grid-template-columns: repeat(auto-fill,minmax(100%,1fr));
+        grid-template-columns: repeat(auto-fill,100%);
+    }
+
+    .containericon
+    {
+        position:fixed;
+        display:grid;
+        grid-template-columns: 100%;
+        gap:10px;
+        bottom:20px;
+        right:20px;
+        z-index: 100;
+    }
+
+    .flotingicon
+    {
+        aspect-ratio: 1/1;
+        padding:0;
+        border-radius: 100%;
+        border:1px;
+        border-style:solid;
+        border-color:yellow;
+    }
+
+    .flotingsocial
+    {
+        filter:invert(100%);
+        width:80%;
+        margin-left:6px;
+        margin-top:6px;
     }
 
 }
@@ -306,6 +353,6 @@ html, body
     {
         padding-left:15%;
         padding-right:8%;
-        grid-template-columns: repeat(auto-fill,minmax(22%,1fr));
+        grid-template-columns: repeat(auto-fill,22%);
     }
 }
