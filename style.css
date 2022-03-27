@@ -9,7 +9,7 @@ html, body
     border:0;
     margin:0;
     padding:0;
-    background-color: rgb(138, 101, 59);
+    background-color: rgb(206, 177, 159);
     font-family: Arial;
 }
 
@@ -17,13 +17,13 @@ html, body
 {
     width: 35px;
     height: 5px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ff8f1c;
     margin: 6px 0;
 }
 
 .menu
 {
-    margin-top:20px; 
+    margin-top:25px; 
     margin-left:18px;
 }
 
@@ -67,6 +67,7 @@ html, body
     z-index:99;
     font-family: "TTInterfaces";
     display: inline-flex;
+    box-shadow: 3px 5px 3px #0000007c;
 }
 .image
 {
@@ -148,6 +149,57 @@ html, body
     z-index:50;
 }
 
+.sideoption
+{
+    position:relative;
+    width:auto;
+}
+
+#home
+{
+    filter: invert(54%) sepia(73%) saturate(936%) hue-rotate(345deg) brightness(103%) contrast(102%);
+    position:absolute;
+    width:50px;
+    top:150px;
+    left:10px;
+}
+
+#articles
+{
+    filter: invert(54%) sepia(73%) saturate(936%) hue-rotate(345deg) brightness(103%) contrast(102%);
+    position:absolute;
+    width:50px;
+    top:300px;
+    left:10px;
+}
+
+#contact
+{
+    filter: invert(54%) sepia(73%) saturate(936%) hue-rotate(345deg) brightness(103%) contrast(102%);
+    position:absolute;
+    width:50px;
+    top:450px;
+    left:10px;
+}
+
+#user
+{
+    filter: invert(54%) sepia(73%) saturate(936%) hue-rotate(345deg) brightness(103%) contrast(102%);
+    position:absolute;
+    width:50px;
+    top:600px;
+    left:10px;
+}
+
+#faq
+{
+    filter: invert(54%) sepia(73%) saturate(936%) hue-rotate(345deg) brightness(103%) contrast(102%);
+    position:absolute;
+    width:50px;
+    top:750px;
+    left:10px;
+}
+
 .container
 {
     display:grid;
@@ -160,7 +212,7 @@ html, body
 .article
 {
     position:static;
-    background-color: rgb(138, 101, 59);
+    background-color: rgb(206, 177, 159);
     border:0;
     bottom:0;
     margin-bottom:0;
@@ -179,11 +231,13 @@ html, body
 {
     position:relative;
     border-radius: 20px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 6/7;
     transform: translate(0px, -60px);
     background-color: #0006B8;
     z-index:30;
+    box-shadow: 5px 10px 8px #0000007c;
 }
+
 
 .imgbox
 {
@@ -212,6 +266,24 @@ html, body
     right: 2%;
     font-size: large;
     color:white;
+}
+
+.typebox
+{
+    background-color: orangered;
+    position:absolute;
+    top:10px;
+    left:10px;
+    padding:8px;
+    border-radius: 10px;
+    z-index: 99;
+    box-shadow: 5px 10px 8px #0000007c;
+}
+
+#logobox
+{
+    filter:invert(100%);
+    width:40px;
 }
 
 .footer
@@ -333,7 +405,7 @@ html, body
         border-radius: 100%;
         border:1px;
         border-style:solid;
-        border-color:yellow;
+        box-shadow: 5px 12px 5px #0000007c;
     }
 
     .flotingsocial
