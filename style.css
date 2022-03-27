@@ -177,6 +177,7 @@ html, body
 
 .box
 {
+    position:relative;
     border-radius: 20px;
     aspect-ratio: 1/1;
     transform: translate(0px, -60px);
@@ -186,27 +187,31 @@ html, body
 
 .imgbox
 {
+    position:absolute;
     width: 100%;
-    max-height: 300px;
+    height: 75%;
+    object-fit:cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
 .titlebox
 {
-    color:rgb(162, 0, 255);
-    margin-top:2%;
-    margin-left:4%;
-    margin-bottom:2%;
-
+    position:absolute;
+    top:55%;
+    left:5%;
+    font-size:x-large;
+    color:rgb(255, 102, 0);
 }
 
 .subtitlebox
 {
+    position:absolute;
+    top:68%;
+    left: 5%;
+    right: 2%;
+    font-size: large;
     color:white;
-    margin-top:2%;
-    margin-left:4%;
-    margin-bottom:2%;
 }
 
 .footer
