@@ -26,37 +26,56 @@ html, body
     box-shadow: 3px 5px 3px #0000007c;
 }
 
-.navimg
+.nav a img
 {
-    padding:0.1em;
+    padding:0.2em;
     max-width:65em;
 }
 
 .menu
 {
     justify-content: center;
-    display: grid;
-    column-gap: 5%;
-    grid-template-columns: auto auto auto auto auto;
+    display: flex;
     margin: 0;
-    padding: 0.2em 0 0.1em 0;
+    padding: 0;
     background-color: rgb(255, 145, 0);
     box-shadow: 0px 5px 5px #0000007c;
+}
+
+.menu li
+{
+    display:inline;
+    padding: 0.15em 0;
+    list-style: none;
+    text-align: center;
+    font-size: 1.5em;
+    font-family:arial;
+}
+
+.menu li a
+{
+    padding: 0.3em 3em;
+    color:rgb(126, 23, 0);
+    text-decoration: none;
+    text-shadow: 0.01em 0.01em rgba(255, 0, 0, 0.351);
+}
+
+.menu li:hover
+{
+    background-color:rgb(232, 70, 0);
+}
+
+.menu li a:hover
+{
+    color:white;
+    text-shadow: 0.05em 0.05em black;
 }
 
 .downbar
 {
     display:block;
-    height:0.6em;
+    height:0.4em;
     background-color: rgb(232, 70, 0);
-}
-
-.fold
-{
-    text-align: center;
-    font-size: 1.5em;
-    font-family:arial;
-    color:rgb(126, 23, 0)
 }
 
 .page
@@ -115,6 +134,11 @@ html, body
     z-index: 2;  
 }
 
+.textnews p
+{
+    margin:0.1em;
+}
+
 .buttonnews
 {
     position:flex;
@@ -129,7 +153,12 @@ html, body
     border-style: outset;
 }
 
-.blockone
+.buttonnews:hover
+{
+    transform:scale(1.2);
+}
+
+.block
 {
     margin-top: 50px;
     padding: 20px;
@@ -139,28 +168,10 @@ html, body
     border-color: rgba(68, 64, 100, 0.227);
 }
 
-.latestproject
+.block h1
 {
-    background-color: rgb(0, 0, 56);
-    border-radius: 40px;
-    aspect-ratio: 3/4;
-}
-
-.blocktwo
-{
-    margin-top: 50px;
-    padding: 20px;
-    background-color: rgb(255, 210, 154);
-    border-style: groove;
-    border-width: 1px 0 1px 0;
-    border-color: rgba(68, 64, 100, 0.227);
-}
-
-.topproject
-{
-    background-color: rgb(56, 30, 0);
-    border-radius: 40px;
-    aspect-ratio: 3/4;
+    color: rgb(2, 0, 56);
+    font-size: 3em;
 }
 
 .grid
@@ -168,6 +179,22 @@ html, body
     display:grid;
     grid-template-columns: auto auto auto auto;
     column-gap: 30px;
+}
+
+
+.grid div
+{
+    background-color: rgb(4, 0, 123);
+    border-radius: 40px;
+    aspect-ratio: 3/4;
+}
+
+.grid div:hover
+{
+    background-color: rgb(3, 0, 103);
+    transform:scale(1.25);
+    border-color: yellow;
+    border-style: solid;
 }
 
 .footer
@@ -185,6 +212,7 @@ html, body
 {
     position:fixed;
     display:grid;
+    justify-items: center;
     grid-template-rows: auto auto auto auto auto;
     gap:1.5vh;
     bottom:4vh;
@@ -198,10 +226,18 @@ html, body
     aspect-ratio: 1/1;
     padding:0.5em;
     border-radius: 100%;
-    border:0.2vh;
+    border:0.3vh;
     border-style:solid;
     border-color:whitesmoke;
     box-shadow: 5px 12px 5px #0000007c;
+}
+
+.flotingicon:hover
+{
+    transform: scale(1.2);
+    border: 0.58vh;
+    border-style:solid;
+    border-color: rgb(255, 213, 0)
 }
 
 #facebook
