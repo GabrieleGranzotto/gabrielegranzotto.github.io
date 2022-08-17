@@ -3,7 +3,7 @@ html, body
     border:0;
     margin:0;
     padding:0;
-    background-image: url('bgimage/backgroundimage.jpg');
+    background-image: url('/bgimage/backgroundimage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial;
@@ -15,7 +15,7 @@ html, body
     top:0;
     right:0;
     z-index:99;
-    font-family: "TTInterfaces";
+    font-family: sans-serif;
 }
 
 .nav
@@ -50,6 +50,7 @@ html, body
     text-align: center;
     font-size: 1.5em;
     font-family:arial;
+    transition: background-color 0.2s;
 }
 
 .menu li a
@@ -58,6 +59,7 @@ html, body
     color:rgb(126, 23, 0);
     text-decoration: none;
     text-shadow: 0.01em 0.01em rgba(255, 0, 0, 0.351);
+    transition: color 0.2s;
 }
 
 .menu li:hover
@@ -71,10 +73,12 @@ html, body
     text-shadow: 0.05em 0.05em black;
 }
 
-.downbar
+.header::after
 {
-    display:block;
+    content:'';
+    display:flex;
     height:0.4em;
+    bottom:0;
     background-color: rgb(232, 70, 0);
 }
 
@@ -108,14 +112,19 @@ html, body
     position:absolute;
     width: 100%;
     height: 100%;
-    background-image: url("bgimage/backgroundnews.jpg");
+    background-image: url("/bgimage/backgroundnews.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     filter: blur(1px) brightness(85%) saturate(180%);
     box-shadow: inset 0 0 180px black;
-    z-index:1;
+    transition:filter 0.4s;
     
+}
+
+.newsbackground:hover
+{
+    filter: blur(2px) brightness(120%) saturate(220%);
 }
 
 .textnews
@@ -151,6 +160,7 @@ html, body
     border-color:rgb(141, 71, 0);
     border-radius: 0.3em;
     border-style: outset;
+    transition: transform 0.2s;
 }
 
 .buttonnews:hover
@@ -186,15 +196,17 @@ html, body
 {
     background-color: rgb(4, 0, 123);
     border-radius: 40px;
+    border-width: 0.1em;
+    border-color: yellow;
+    border-style: solid;
     aspect-ratio: 3/4;
+    transition: transform 0.2s;
 }
 
 .grid div:hover
 {
-    background-color: rgb(3, 0, 103);
-    transform:scale(1.25);
-    border-color: yellow;
-    border-style: solid;
+    transform:scale(1.22);
+    box-shadow: 0px 10px 8px #0000007c;;
 }
 
 .footer
@@ -208,68 +220,108 @@ html, body
     z-index:99;
 }
 
-.containericon
+.footer ul
 {
-    position:fixed;
-    display:grid;
-    justify-items: center;
-    grid-template-rows: auto auto auto auto auto;
-    gap:1.5vh;
-    bottom:4vh;
-    right:3vw;
+    list-style: none;
+    text-align: center;
+    font-size: 1.55em;
 }
 
-.flotingicon
+.footer ul li
 {
-    height: 5vh;
-    min-height: 4em;
+    padding: 0.2em;
+}
+
+.footer ul li a
+{
+    text-decoration: none;
+    color: #ff6a00;
+    text-shadow: 0.3px 0.2px rgb(110, 110, 110);
+}
+
+.containericon
+{
+    position:absolute;
+    display:grid;
+    justify-items: center;
+    grid-template-columns: auto auto auto auto auto;
+    gap:1em;
+    top:1.2em;
+    right:1vw;
+}
+
+.containericon a
+{
+    height: 2em;
     aspect-ratio: 1/1;
     padding:0.5em;
     border-radius: 100%;
     border:0.3vh;
     border-style:solid;
-    border-color:whitesmoke;
-    box-shadow: 5px 12px 5px #0000007c;
+    border-color:transparent;
 }
 
-.flotingicon:hover
+.containericon a:hover
 {
-    transform: scale(1.2);
-    border: 0.58vh;
-    border-style:solid;
-    border-color: rgb(255, 213, 0)
+    border-color: grey;
 }
 
 #facebook
 {
-    background-color: blue;
-}
-
-#instagram
-{
-    background-image: linear-gradient(to top right,orange, red,fuchsia,indigo);
+    filter: invert(49%) sepia(0%) saturate(2998%) hue-rotate(336deg) brightness(100%) contrast(73%);
 }
 
 #twitter
 {
-    background-color: #1da1f2;
+    filter: invert(49%) sepia(0%) saturate(2998%) hue-rotate(336deg) brightness(100%) contrast(73%);
 }
 
 #github
 {
-    background-color: black;
+    filter: invert(49%) sepia(0%) saturate(2998%) hue-rotate(336deg) brightness(100%) contrast(73%);
 }
 
-#discord
+#linkedin
 {
-    background-color: #5865F2;
+    filter: invert(49%) sepia(0%) saturate(2998%) hue-rotate(336deg) brightness(100%) contrast(73%);
 }
 
-.flotingsocial
+#hackerrank
+{
+    filter: invert(49%) sepia(0%) saturate(0%) hue-rotate(336deg) brightness(100%) contrast(73%);
+}
+
+
+#facebook:hover
+{
+    filter: invert(8%) sepia(100%) saturate(7446%) hue-rotate(247deg) brightness(100%) contrast(143%);
+}
+
+#twitter:hover
+{
+    filter: invert(53%) sepia(51%) saturate(3486%) hue-rotate(176deg) brightness(100%) contrast(90%);
+}
+
+#github:hover
+{
+    filter: saturate(0%) brightness(0%)
+}
+
+#linkedin:hover
+{
+    filter: invert(26%) sepia(52%) saturate(7205%) hue-rotate(199deg) brightness(91%) contrast(92%);
+}
+
+#hackerrank:hover
+{
+    filter: invert(55%) sepia(73%) saturate(438%) hue-rotate(88deg) brightness(98%) contrast(90%);
+}
+
+
+.containericon a img
 {
     justify-content: center;
     width: 100%;
     height: 100%;
-    filter:invert(100%);
 }
 
