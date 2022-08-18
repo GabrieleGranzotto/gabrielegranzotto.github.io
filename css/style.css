@@ -17,6 +17,9 @@ html, body
     z-index:99;
 }
 
+.hamburger
+{display:none;}
+
 .nav
 {
     position: relative;
@@ -344,4 +347,42 @@ html, body
     text-decoration: none;
     color: #ff6a00;
     text-shadow: 0.3px 0.2px rgb(110, 110, 110);
+}
+
+
+@media (max-width:880px)
+{
+    .containericon
+    {display:none;}
+
+    .menu
+    {display:none;}
+
+    .nav
+    {
+        justify-content:left;
+    }
+
+    .hamburger
+    {
+        margin: auto 5em auto 0.2em;
+        padding:0.5em;
+        display:block;
+    }
+
+    .hamburger span
+    {
+   
+        display:block;
+        margin:0.4em;
+        width:2.4em;
+        height:0.3em;
+        background-color: white;
+    }
+
+    #titlelogo img
+    {
+        display:none;
+    }
+
 }
