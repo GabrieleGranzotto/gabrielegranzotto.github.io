@@ -29,13 +29,16 @@ html, body
     box-shadow: 3px 5px 3px #0000007c;
 }
 
-#titlelogo img
+#titlelogo
 {
     padding:0.2em;
     width:60vw;
     max-width:65em;
     min-width: 35em;
 }
+
+#titlemobile
+    {display:none;}
 
 .containericon
 {
@@ -140,14 +143,14 @@ html, body
     padding: 0.15em 0;
     list-style: none;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family:'Poppins', sans-serif;
     transition: background-color 0.2s;
 }
 
 .menu li a
 {
-    padding: 0.3em 3em;
+    padding: 0.3em 1.6em;
     color:rgb(126, 23, 0);
     text-decoration: none;
     text-shadow: 0.01em 0.01em rgba(255, 0, 0, 0.351);
@@ -184,7 +187,7 @@ html, body
 .content
 {
     width: 60vw;
-    min-width: 1000px;
+    min-width: 1050px;
     height: 100%;
     padding: 3em 0 1em 0;
     background-color: rgba(245, 245, 245, 0.887);
@@ -350,7 +353,7 @@ html, body
 }
 
 
-@media (max-width:880px)
+@media (max-width:950px)
 {
     .containericon
     {display:none;}
@@ -365,7 +368,7 @@ html, body
 
     .hamburger
     {
-        margin: auto 5em auto 0.2em;
+        margin: auto 2vw auto 0.2em;
         padding:0.5em;
         display:block;
     }
@@ -380,9 +383,81 @@ html, body
         background-color: white;
     }
 
-    #titlelogo img
+    #titlelogo
     {
         display:none;
+    }
+
+    #titlemobile
+    {
+        position:absolute;
+        display:flex;
+        height:3.5em;
+        left:50%;
+        transform: translateX(-50%);
+    }   
+        
+    .content
+    {
+        width: 100%;
+        min-width:auto;
+        height: 100%;
+        padding:0;
+        background-color: rgba(245, 245, 245, 0.887);
+    }
+
+    .news
+    {
+        position:relative;
+        width: 100%;
+        height:100vh;
+    }
+
+    .newsbackground
+    {
+        box-shadow: inset 5px -30vh 60vh rgba(0, 0, 0, 0.855);      
+    }
+
+    .newsbackground:hover
+    {
+        filter: blur(2px) brightness(120%) saturate(220%);
+    }
+
+    .textnews
+    {
+        position:absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        color: white;
+        font-size:5.3vh;
+        padding:5vh 0;
+        text-align:center;
+        width:100%;
+        background: transparent;
+        text-shadow: 2px 2px 5px #ff6a00;  
+        z-index: 2;  
+    }
+
+    .textnews p
+    {
+        margin:0.2em;
+    }
+
+    .buttonnews
+    {
+        position:flex;
+        justify-content: center;
+        font-size:6vh;
+        margin-top:3vh;
+        color:rgb(255, 157, 0);
+        background-color: transparent;
+        border-width: 0.2em;
+        border-color:rgb(255, 157, 0);
+        border-radius: 0.05em;
+        border-style: outset;
+        transition: 0.2s;
+        background-color: transparent;
     }
 
 }
