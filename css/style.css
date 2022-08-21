@@ -6,6 +6,7 @@ html, body
     background-image: url('/bgimage/backgroundimage.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -227,11 +228,12 @@ html, body
     width: 70vw;
     min-width: 1250px;
     height: 100%;
-    padding: 3em 0 1em 0;
+    margin:2em 0 0 0;
+    padding: 0 0 1em 0;
     background-color: rgba(245, 245, 245, 0.887);
-    border-width: 0px 1px 0px 1px;
+    border-width: 1px 1px 0px 1px;
     border-color:rgb(61, 61, 61);
-    border-style: groove; 
+    border-style: solid; 
 }
 
 .news
@@ -364,6 +366,8 @@ html, body
 .footer
 {
     position:static;
+    display:block;
+    justify-content: center;
     bottom:0;
     padding:20px;
     min-height: 200px;
@@ -372,16 +376,25 @@ html, body
     z-index:99;
 }
 
+#titlefooter
+{
+    display:block;
+    margin:1em  auto;   
+    width:10%;
+    left:100%;
+}
+
 .footer ul
 {
-    list-style: none;
+    list-style:none;
     text-align: center;
     font-size: 1.55em;
 }
 
 .footer ul li
 {
-    padding: 0.2em;
+    display: inline-block;
+    padding: 1em;
 }
 
 .footer ul li a
