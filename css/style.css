@@ -40,6 +40,44 @@ html, body
 #titlemobile
     {display:none;}
 
+.searchbox
+{
+    position: absolute;
+    display:flex;
+    align-items: center;
+    background-color: rgb(20, 20, 20);
+    padding:1em;
+    border-radius: 0 0 1.5em 1.5em;
+    box-shadow: 0.2em 0.5em 0.5em black;
+    right:1vw;
+}
+
+.searchbox input
+{
+    display:inline-block;
+    text-align: center;
+    height: 2.5em;
+    width:10vw;
+    border-radius: 1.5em;
+    border-style:unset;
+    color: rgb(192, 51, 0);
+    background-color: rgb(210, 209, 209);
+    box-shadow: 0 0 0.5em inset black;
+}
+.searchbox button
+{
+    background-color: rgb(37, 37, 37);
+    border-radius: 1.5em;
+}
+
+#search
+{
+    display:flex;
+    justify-content: center;
+    filter:invert() brightness(60%);
+}
+
+
 .containericon
 {
     position:absolute;
@@ -359,7 +397,7 @@ html, body
 }
 
 
-@media (max-width:1220px)
+@media (max-width:1350px)
 {
     .containericon
     {display:none;}
@@ -402,6 +440,7 @@ html, body
         height:3.5em;
         left:50%;
         transform: translateX(-50%);
+        z-index:20;
     }   
         
     .content
@@ -486,13 +525,106 @@ html, body
     .sidemenumobile
     {
         position: fixed;
-        display:flex;
+        display:block;
         top:0;
         bottom:0;
         left:0;
-        width:60vw;
+        width:55vw;
         background-color: rgb(23, 23, 23);
         z-index:10;
+        padding:4em 2em;
+
+        transform: translateX(-100%);
+    }
+
+    .sidemenumobile ul
+    {
+        margin: 2.5em 0;
+    }
+
+
+    .sidemenumobile ul li
+    {
+        list-style: none;
+        text-align: begin;
+        padding:0.5em;
+    }
+
+    .sidemenumobile ul li a
+    {
+        text-decoration: none;
+        color:rgb(232, 70, 0);
+        font-size: 2em;
+    }
+
+    .sidemenumobile ul li a:hover
+    {
+        color:white;
+        text-shadow: 0.05em 0.05em black;
+    }
+
+    .sidecontainericon
+    {
+
+        display:block;
+        top: 0;
+        bottom:0;
+        right:0;
+        padding: 0 1.5em;
+        align-items: center;
+    }
+
+    .sidecontainericon a
+    {
+        display: inline-block;
+        padding:0.5em;
+        margin:1em;
+        border-radius: 100%;
+        border:0.2em;
+        border-style:solid;
+        border-color:transparent;
+    }
+
+    .sidecontainericon a img
+    {
+        display:flex;
+        justify-content: center;
+        height:2em;
+        aspect-ratio: 1/1;
+    }
+
+    .sidecontainericon a:hover
+    {
+        border-color: grey;
+    }
+
+    .searchbox
+    {display:none;}
+
+    .searchboxmobile
+    {
+        display:flex;
+        margin:2em 2em 0 2em;
+        padding:1em;
+    }
+
+    .searchboxmobile input
+    {
+        display:inline-block;
+        text-align: center;
+        height: 3em;
+        width:20em;
+        border-radius: 1em;
+        border-style:unset;
+        color: rgb(192, 51, 0);
+        background-color: rgb(210, 209, 209);
+        box-shadow: 0 0 0.5em inset black;
+    }
+    .searchboxmobile button
+    {
+        background-color: rgb(37, 37, 37);
+        border-radius: 1em;
+        padding:0 1.2em;
     }
 
 }
