@@ -1,0 +1,102 @@
+*
+{
+    border: 1px solid red;
+}
+
+
+html, body
+{
+    border:0;
+    margin:0;
+    padding:0;
+}
+
+
+.nav
+{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 4em;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.hamburger
+{
+    display:inline-block;
+    margin-right:3em;
+    padding:1em;
+    z-index: 11;
+}
+
+.hamburger span
+{
+
+    display:block;
+    margin:0.3em;
+    width:2em;
+    height:0.2em;
+    background-color: white;
+}
+
+
+.nav a img
+{
+    display: inline-block;
+    height:4em;
+    margin-right:3em;
+}
+
+.searchbox
+{
+    display:inline-block;
+    position:absolute;
+    top:0;
+    height:4em;
+}
+
+.searchbox input
+{
+    text-align: center;
+    height: 3em;
+    width:50vw;
+    border-style:unset;
+}
+.searchbox button
+{
+    background-color: rgb(37, 37, 37);
+    height:3em;
+}
+
+.searchbox button span
+{
+    display:flex;
+    justify-content: center;
+    filter:invert() brightness(60%);
+}
+
+.hero
+{
+    top:0;
+    left:0;
+    right:0;
+    height:650px;
+    background-image: url("/bgimage/backgroundnews.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(1px) brightness(85%) saturate(180%);
+    box-shadow: -25vw 0 15em inset black;
+}
+
+.content
+{
+    display:grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+.content > div
+{
+    height:3000px;
