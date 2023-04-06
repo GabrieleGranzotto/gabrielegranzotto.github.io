@@ -1,14 +1,21 @@
 html, body, *
+html, body
 {
     border:0;
     margin:0;
+    border:0;
     padding:0;
+<<<<<<< HEAD
 
+=======
+    background-color: antiquewhite;
+>>>>>>> 30b3e4d94a7fc7f740d2c11a7c5d6c0050566553
 }
 
 header
 {
     top:0;
+<<<<<<< HEAD
     right:0;
     left:0;
     padding: 0 10%;
@@ -44,4 +51,39 @@ header
     font-size: 25px;
     color: white;
 
+=======
+    width:auto;
+    height:80px;
+    background-color: blue;
+    display:inline-grid;
+    column-gap:10px;
+    grid-template-columns: 20% auto;
+}
+
+.logo
+{
+    padding:5px;
+    background-color: black;
+}
+
+.navbar
+{
+    font-size: 20px;
+    list-style: none;
+    text-align: center;
+    margin: auto 0;
+}
+
+.navbar li ul
+{
+    color:white;
+    display:inline;
+    margin: 0 3%;
+    font-weight:bold;
+}
+
+.navbar li ul:hover
+{
+    color:yellow;
+>>>>>>> 30b3e4d94a7fc7f740d2c11a7c5d6c0050566553
 }
