@@ -1,0 +1,37 @@
+html, body
+{
+    margin: 0;
+    border: 0;
+    background-color: black;
+}
+
+header
+{
+    position: fixed;
+    background-color: #404040;
+    top:0;
+    height: 60px;
+    width: 100%;
+
+}
+
+.hero
+{
+    position:fixed;
+    background-image: url("/image/hero_background.jpg");
+    height:600px;
+    width:100%;
+    top:0;
+    z-index: -1;
+}
+
+.maincontent
+{
+    background-image: url("/image/backgroundimage.jpg");
+    background-color: white;
+    margin-top: 40%;
+    bottom:0;
+    height: 1000px;
+    width:100%;
+    z-index: 2;
+}
