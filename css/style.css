@@ -2,11 +2,12 @@ html, body
 {
     margin: 0;
     border: 0;
-    background-color: black;
 }
 
 header
 {
+    display: inline-grid;
+    grid-template-columns: 15% 60px auto 120px 120px 15%;
     position: fixed;
     background-color: #404040;
     top:0;
@@ -15,11 +16,20 @@ header
 
 }
 
+.menu
+{
+    font-size: 28px;
+    color: whitesmoke;
+    margin: auto 0;
+}
+
 .hero
 {
-    position:fixed;
     background-image: url("/image/hero_background.jpg");
-    height:600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:fixed;
+    height:1000px;
     width:100%;
     top:0;
     z-index: -1;
@@ -27,11 +37,19 @@ header
 
 .maincontent
 {
+    display:inline-grid;
+    grid-template-columns: auto 70% auto;
     background-image: url("/image/backgroundimage.jpg");
     background-color: white;
     margin-top: 40%;
     bottom:0;
     height: 1000px;
     width:100%;
-    z-index: 2;
+}
+
+.mainbody
+{
+    background-color: rgba(0, 150, 196, 0.342);
+    margin: 20px 0;
+    border-radius: 20px;
 }
