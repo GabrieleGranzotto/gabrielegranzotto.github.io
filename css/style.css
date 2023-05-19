@@ -18,22 +18,31 @@ nav
 
 nav div
 {
+    position:relative;
+    display: block;
     max-width: 1600px;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    height:100%;
+    margin: 20px 20%;
 }
 
 nav div a
 {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: 15px;
-    margin-left: 15px;
+    text-align: center;
     text-decoration: none;
-    background-color: transparent;
+    font-size: 22px;
+    color: whitesmoke;
+}
+
+nav div a span
+{
+    margin: 20px 30px;
+}
+
+nav a img
+{
+    position: absolute;
+    margin: 0 calc(20% - 100px);
 }
 
 .menu
