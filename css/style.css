@@ -81,3 +81,15 @@ nav a img
     margin: 20px 0;
     border-radius: 20px;
 }
+
+.button
+{
+    background-color:darkblue;
+    color:white;
+    font-size: 60px;
+    height: 200px;
+    width:600px;
+    border-radius: 30px;
+    position:relative;
+    margin: 100px 30%;
+}
