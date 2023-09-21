@@ -49,3 +49,32 @@ nav ul li a
     font-size: 20px;
     font-family: 'Work Sans';
 }
+
+nav ul li :hover
+{
+    color: yellow;
+}
+
+.hero
+{
+    min-height: 50vh;
+    max-height: 500px;
+    margin:auto;
+    background-color: black;
+    text-align: center;
+}
+
+.hero img
+{
+    height:50vh;
+    min-width:85vw;
+    filter: brightness(0.75) saturate(2.5);
+}
+
+.content
+{
+    margin: auto;
+    max-width:1400px;
+    background-color: lightgray;
+    bottom:0;
+}
