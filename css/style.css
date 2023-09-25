@@ -78,7 +78,7 @@ nav ul li :hover
     max-width:1400px;
     border-left: 1px solid lightgrey;
     border-right: 1px solid lightgray;
-    min-height: 800px;
+    min-height: 1200px;
     padding: 50px;
 }
 
@@ -87,9 +87,9 @@ footer
     bottom: 0;
     left: 0;
     right: 0;
-    height: 250px;
-    background-color: rgb(70, 67, 67);
-    padding: 15px 0 25px 0;
+    height: 350px;
+    background-color: rgb(63, 60, 60);
+    padding-top: 50px;
 }
 
 footer ul
@@ -97,7 +97,6 @@ footer ul
     text-align: center;
     list-style: none;
     align-items: center;
-    font-size: 25px;
 }
 
 footer ul li
@@ -109,7 +108,7 @@ footer ul li a
 {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Work Sans';
 }
 
