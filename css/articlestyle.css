@@ -1,0 +1,27 @@
+article
+{
+    padding: 0 40px;
+}
+
+article h1
+{
+    font-size: 70px;
+    color: rgb(255, 30, 0);
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+article h2
+{
+    font-size: 30px;
+    color: darkblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-top: 0;
+}
+
+article div
+{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
