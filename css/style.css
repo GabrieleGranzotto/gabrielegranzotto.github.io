@@ -91,6 +91,11 @@ nav ul li :hover
 
 }
 
+.articleslist
+{
+    margin-bottom: 80px;
+}
+
 .articleslist a
 {
     transition: 1s;
@@ -144,11 +149,6 @@ nav ul li :hover
     font-style: oblique;
 }
 
-.projectslist
-{
-    margin-top: 80px;
-}
-
 footer
 {
     bottom: 0;
@@ -168,14 +168,14 @@ footer ul
 
 footer ul li
 {
-    padding: 10px;
+    padding: 5px;
 }
 
 footer ul li a
 {
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Work Sans';
 }
 
