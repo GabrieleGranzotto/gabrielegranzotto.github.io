@@ -1,0 +1,25 @@
+table
+{
+    margin: 30px 450px;
+    font-size: 25px;
+}
+
+table tr th
+{
+    padding: 10px 25px;
+}
+
+h2
+{
+    font-size: 40px;
+    margin: 50px 480px;
+    color: rgb(212, 95, 0);
+    font-weight: 700;
+    font-style: italic;
+}
+
+.aboutMe
+{
+    margin: 50px 450px;
+    font-size: 25px;
+}
