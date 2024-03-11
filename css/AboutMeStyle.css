@@ -1,6 +1,7 @@
 table
 {
-    margin: 30px 450px;
+    margin: 50px auto;
+    max-width: 60%;
     font-size: 25px;
 }
 
@@ -12,7 +13,8 @@ table tr th
 h2
 {
     font-size: 40px;
-    margin: 50px 480px;
+    margin: 50px auto;
+    max-width: 60%;
     color: rgb(212, 95, 0);
     font-weight: 700;
     font-style: italic;
@@ -20,6 +22,14 @@ h2
 
 .aboutMe
 {
-    margin: 50px 450px;
+    margin: 50px auto;
+    max-width: 60%;
     font-size: 25px;
+}
+
+.aboutMe a img
+{
+    height: 150px;
+    padding:10px;
+    margin: 20px;
 }
