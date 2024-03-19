@@ -196,65 +196,48 @@ footer ul li :hover
 
 @media screen and (max-width: 1000px)
 {
-    body
-    {
-        background-image: url("/images/hero_background.jpg");
-        background-repeat: no-repeat;
-        background-size:auto;
-        background-position: center 0;
-    }
-
     nav ul
-    {
-        display: none;
-    }
-
-    .hero
     {
         display: none;
     }
 
     .articleslist
     {
-        margin-top: 80vh;
-        background-color: rgb(34, 34, 34);
+        background-color: rgb(51, 51, 51);
         display:grid;
-        grid-row-gap: 2vh;
+        margin: 0;
     }
 
     .texttitle
     {
         font-size: 40px;
-        margin: 1vh auto;
-        padding: 1vh auto;
+        margin: 20px 10%;
+        padding: 0;
     }
 
     .block 
     {
         display:contents;
         align-items: center;
-        margin:2vh auto;
     }
 
     .blockarticle 
     {
         text-decoration: none;
-        display:contents;
+        display:block;
         width: 95vw;
         height: auto;
-        aspect-ratio: 1 / 1;
-        margin: 2vh auto;
     }
 
     .blockarticle img {
-        width: 100%;
+        width: 95vw;
         margin: 0;
         padding: 0;
         object-fit:cover;
     }
 
     .blockarticle div {
-        margin: 0 30px;
+        padding: 15px 2px;
     }
 
     .blockarticle div h1 {

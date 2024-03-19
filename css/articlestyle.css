@@ -63,3 +63,11 @@
     margin: 3px;
     color: whitesmoke;
 }
+
+@media screen and (max-width: 1000px)
+{
+    .content article
+    {
+        max-width: 90vw;
+    }
+}

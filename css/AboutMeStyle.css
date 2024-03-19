@@ -33,3 +33,19 @@ h2
     padding:10px;
     margin: 20px;
 }
+
+@media screen and (max-width: 1000px) 
+{
+
+    table 
+    {
+        max-width: 85vw;
+        font-size: 20px;
+    }
+
+    .aboutMe
+    {
+        max-width: 90vw;
+    }
+
+}
