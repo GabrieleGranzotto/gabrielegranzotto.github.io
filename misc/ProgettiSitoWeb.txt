@@ -5,4 +5,6 @@ PROGETTI SITO WEB:
 -Top10 giochi con recensione
 -Corso Programmazione Python
 -AlpacaGameAward
+-Programma per pubblicare articoli automaticamente
+-App salva vita  per persone agredite (panic button)
 -VariArticoli

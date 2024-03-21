@@ -43,12 +43,14 @@ output:
 - Into the Breach
 - Half Life 2
 - Resident Evil
+- (Super Mario Bros)
 - Finding Paradise
 
 ## 31-40
 
 - a Short Hike
 - Braid
+- (Tetris)
 - Sekiro: Shadows Die Twice
 - Her Story
 - Kentucky Route Zero
@@ -82,6 +84,7 @@ output:
 - Portal 2
 - Life is Strange
 - Jak and Daxter: the Precursor Legacy
+- (Pacman)
 - Crysis
 
 ## 61-70
