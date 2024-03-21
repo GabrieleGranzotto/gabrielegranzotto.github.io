@@ -198,19 +198,23 @@ footer ul li :hover
 {
     nav 
     {
-        height: 7vh;
+        height: 20vw;
+        max-height: 10vh;
     }
 
     nav a
     {
         margin: 0 auto;
+        width: 100%;
+        height:100%
     }
 
     nav a img
     {
         display: block;
         margin: 0 auto;
-        max-width: 90%;
+        max-width: 100%;
+        height: 100%;
     }
 
     nav ul
