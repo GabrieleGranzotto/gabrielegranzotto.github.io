@@ -64,10 +64,30 @@
     color: whitesmoke;
 }
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 1200px)
 {
     .content article
     {
         max-width: 90vw;
+    }
+
+    .content article h1
+    {
+        font-size: 10vw;
+    }
+
+    .content article h2
+    {
+        font-size: 4vw;
+    }
+
+    .author
+    {
+        font-size: 2.5vw;
+    }
+
+    .text
+    {
+        font-size: 4vw;
     }
 }

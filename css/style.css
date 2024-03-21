@@ -194,8 +194,23 @@ footer ul li :hover
     display: none;
 }
 
-@media screen and (max-width: 1000px)
+@media screen and (max-width: 1200px)
 {
+    nav 
+    {
+        height: 5vh;
+    }
+
+    nav a
+    {
+        margin: 0 auto;
+    }
+
+    nav a img
+    {
+        scale: 1.5;
+    }
+
     nav ul
     {
         display: none;
@@ -210,9 +225,9 @@ footer ul li :hover
 
     .texttitle
     {
-        font-size: 40px;
+        font-size: 4vh;
         margin: 20px 10%;
-        padding: 0;
+        padding: 1vh;
     }
 
     .block 
@@ -225,30 +240,52 @@ footer ul li :hover
     {
         text-decoration: none;
         display:block;
-        width: 95vw;
+        width: 100vw;
         height: auto;
+        margin: 3vh 0;
+        padding: 0;
     }
 
     .blockarticle img {
-        width: 95vw;
+        width:100vw;
+        height: 40vh;
         margin: 0;
         padding: 0;
         object-fit:cover;
     }
 
     .blockarticle div {
-        padding: 15px 2px;
+        padding: 2vh 1vh;
+
     }
 
     .blockarticle div h1 {
-        font-size: auto;
+        font-size: 3vh;
         color: rgb(234, 196, 68);
         font-weight: 700;
         padding: 0;
     }
 
     .blockarticle div h2 {
-        font-size: auto;
+        font-size: 2vh;
         font-style: oblique;
     }
+
+   footer
+   {
+       bottom:0;
+       height: 35vh;
+       padding-top: 6vh;
+       padding-bottom: 2vh;
+   }
+
+   footer ul li 
+   {
+       padding: 1vh;
+   }
+
+   footer ul li a 
+   {
+       font-size: 3vh;
+   }
 }
