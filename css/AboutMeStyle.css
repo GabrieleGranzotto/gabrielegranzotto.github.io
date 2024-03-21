@@ -10,6 +10,11 @@ table tr th
     padding: 10px 25px;
 }
 
+.tablemobile
+{
+    display: none;
+}
+
 h2
 {
     font-size: 40px;
@@ -37,14 +42,27 @@ h2
 @media screen and (max-width: 1000px) 
 {
 
-    table 
+    h2
     {
-        max-width: 85vw;
-        font-size: 20px;
+        font-size: 5vh;
+    }
+
+    .tablemobile
+    {
+        display: block;
+        object-fit: center;
+        margin: 0;
+        font-size: 6vw;
+    }
+
+    .table 
+    {
+        display: none;
     }
 
     .aboutMe
     {
+        font-size: 3vh;
         max-width: 90vw;
     }
 

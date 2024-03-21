@@ -198,7 +198,7 @@ footer ul li :hover
 {
     nav 
     {
-        height: 5vh;
+        height: 7vh;
     }
 
     nav a
@@ -208,12 +208,24 @@ footer ul li :hover
 
     nav a img
     {
-        scale: 1.5;
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
     }
 
     nav ul
     {
         display: none;
+    }
+
+    .hero
+    {
+        height: 90vh;
+    }
+
+    .hero img
+    {
+        height: 90vh;
     }
 
     .articleslist
@@ -225,7 +237,7 @@ footer ul li :hover
 
     .texttitle
     {
-        font-size: 4vh;
+        font-size: 6vh;
         margin: 20px 10%;
         padding: 1vh;
     }
@@ -273,15 +285,14 @@ footer ul li :hover
 
    footer
    {
-       bottom:0;
-       height: 35vh;
-       padding-top: 6vh;
-       padding-bottom: 2vh;
+       margin: 0;
+       padding: 6vh 0;
+       height: auto;
    }
 
    footer ul li 
    {
-       padding: 1vh;
+       margin: 1vh;
    }
 
    footer ul li a 
