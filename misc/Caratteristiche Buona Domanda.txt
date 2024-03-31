@@ -1,0 +1,39 @@
+Quali sono le caratteristiche di una buona domanda?
+
+
+1- Capire il contesto che sta dietro a quella domanda
+
+	es- "Cosa ne pensi di GPT?"
+		Questa domanda ha senso solo se capisci cosa significa GPT, se sai i suoi usi (anche in generale) e comprendi
+		il contesto intorno allo strumento
+	
+
+2- Essere sempre disposti a cambiare idea
+
+	Fare una domanda partendo prevenuto sulla risposta e avendo già in mente una risposta giusta e una sbagliata risulta
+	una inutile conversazione, quasi un monologo di chi fa la domanda.
+	
+	nb- Questo non significa che non si possa avere una idea e anche difenderla argomentativamente ma è importante non
+		precludersi l'idea di cambiarla
+		
+
+3- Sapere sempre lo scopo per cui si fa una domanda
+	
+	Fare una domanda senza comprenderla perché si faccia e quindi solo per riempire una chiaccherata di parole senza senso
+	è poco formativo per chi pone la domanda (che finirà per non ascoltare la risposta) e fastidioso per chi risponde (perché
+	sentirà poco valorizzata la sua risposta).
+	
+	es- "Come va?"
+	
+4- Essere sempre critici davanti ad una risposta
+	
+	Con la parola "critico" non si intende negativo ma bensì dubbioso, quindi la regola può essere riformulata come 
+	"mai accettare una risposta come vera a prescidere".
+	Questa è una fallacia che si chiama Ricorso all'Autorità (Argumentum ab auctoritate).
+	Questo è quello che sempre più spesso succede con strumenti come chat-GPT che danno una risposta (che non si è per nulla 
+	sicuri che sia giusta) e la si prende per vera per una qualche autorità oracolare del mezzo.
+	
+	ps- l'esempio di chat-GPT è dannoso anche perché anche se fosse corretta la risposta non alleni il tuo senso critico, 
+		sarà molto difficile ricordarti le informazioni perché non fai la fatica di averle cercate e con tutta probabilità ti 
+		precludi tutta la possibilità di imbatterti in tutte quelle informazioni collaterali in cui incapperesti anche solo
+		con una ricerca su Internet e che ti potrebbero far appassionare all'argomento e finire in un cosidetto "Rabbit Hole".
