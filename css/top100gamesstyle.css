@@ -18,7 +18,7 @@ h3
     border: 0.1rem solid black;
     box-shadow: 0 0 10px 0 black;
     width: 220px;
-    aspect-ratio: 5/6;
+    aspect-ratio: 5/10;
     align-content: center;
     align-items: stretch;
     background-color: rgb(0, 0, 36);
