@@ -128,7 +128,7 @@ output:
 - The Walking Dead: Definitive Edition
 - Detroit Become Human
 - Legacy of Kain: Soul Reaver
-- Rayman
+- God of War (2018)
 - Bioshock 2
 - The Elden Scrolls V: Skyrim
 - Getting Over It
@@ -171,6 +171,7 @@ output:
 - Ratchet & Clank: a Spasso nel Tempo
 - Metal: Hellsinger
 - Crash Bandicoot: n'Sane Trilogy
+- Rayman
 - Champions 2: Return to Arms
 - Uncharted: Drake's Fortune
 
