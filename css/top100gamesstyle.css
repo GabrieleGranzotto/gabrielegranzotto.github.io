@@ -24,12 +24,12 @@ h3
     background-color: rgb(0, 0, 36);
 }
 
-.game img
-{
-    object-fit:cover;
+.game img {
+    object-fit: cover;
     margin: 0;
     height: 70%;
 }
+
 
 .game div
 {
@@ -37,4 +37,19 @@ h3
     text-align: center;
     margin: auto 0;
     padding: 2%;
+}
+
+@media screen and (max-width: 1000px) 
+{
+    
+    .gameblock 
+    {
+        gap: 60px 0;
+        margin: 40px 8%;
+    }
+
+    .game {
+        width: 84%;
+    }
+
 }
