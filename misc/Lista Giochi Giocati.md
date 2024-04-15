@@ -232,15 +232,16 @@ output:
 - Tomb Raider: Classics
 - Prototype
 - Trine
+- Gone Home
 - Plants vs Zombies
 - Jak II: Renegade
 - Ape Escape
 - Prince of Persia: Spirito Gueriero
 - Disney's Hercules
-- Sacred
 
 ## 181-190
 
+- Sacred
 - Fallout: New Vegas
 - Skate 3
 - Trine 4: The Nightmare Prince
@@ -250,10 +251,10 @@ output:
 - Tomb Raider: Trilogy
 - Gex: Enter the Gecko
 - Pokemon Verde Foglia
-- Prince of Persia: i Due Troni
 
 ## 191-200
 
+- Prince of Persia: i Due Troni
 - Metroid: Zero Mission
 - Sacred 2
 - Trine 3: The Artifact of Power
@@ -263,23 +264,23 @@ output:
 - Oddworld: Abe's Oddysee
 - Super Seducer
 - Reigns
-- Phasmophobia
 
 ## 201-210
 
+- Dagon
+- Darq
+- Phasmophobia
 - Pokemon Diamante
 - Super Seducer 2
-- Resident Evil 0
+- Resident Evil 5
 - Ratchet & Clank: l'Altezza Non Conta
 - Rage
-- Dagon
-- Resident Evil 5
+- Resident Evil 0
 - Battlefield 3
-- Darq
-- Deadlight: Director's Cut
 
 ## 211-220
 
+- Deadlight: Director's Cut
 - Battlefield V
 - Dead Space 3
 - Hello Neigbors
