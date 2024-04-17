@@ -24,6 +24,12 @@
     font-weight: 300;
 }
 
+.content article h3
+{
+    font-size: 50px;
+    color: darkred;
+}
+
 .author
 {
     color: rgb(204, 204, 204);

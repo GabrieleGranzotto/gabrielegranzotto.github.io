@@ -72,6 +72,11 @@ nav ul li :hover
     object-fit: cover;
 }
 
+.content
+{
+    min-height: 90vh;
+}
+
 .texttitle
 {
     font-size: 60px;
