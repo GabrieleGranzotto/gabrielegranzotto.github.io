@@ -13,7 +13,7 @@ body
     text-align: center;
 }
 
-.welcome h1
+.welcome > h1
 {
     -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: black;
@@ -24,7 +24,7 @@ body
     font-weight: 700;
 }
 
-.welcome h2
+.welcome > h2
 {
     font-size: 70px;
     max-width: 1200px;
@@ -33,7 +33,7 @@ body
     font-weight: 600;
 }
 
-.welcome ul
+.welcome > ul
 {
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: rgb(21, 0, 253);
@@ -45,14 +45,14 @@ body
     transition:0.1s;
 }
 
-.welcome ul li a
+.welcome > ul > li > a
 {
     text-decoration: none;
     color:white;
     transition: 0.1s;
 }
 
-.welcome ul li:hover
+.welcome > ul > li:hover
 {
     -webkit-text-stroke-width: 2px;
     transform: scale(1.2);
@@ -60,7 +60,7 @@ body
 
 }
 
-.welcome ul li a:hover
+.welcome > ul > li > a:hover
 {
     color: rgb(255, 157, 0);
     transition: 0.2s;

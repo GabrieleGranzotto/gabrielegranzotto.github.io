@@ -24,14 +24,14 @@ h3
     background-color: rgb(0, 0, 36);
 }
 
-.game img {
+.game > img {
     object-fit: cover;
     margin: 0;
     height: 70%;
 }
 
 
-.game div
+.game > div
 {
     font-size: 23px;
     text-align: center;
@@ -50,6 +50,11 @@ h3
 
     .game {
         width: 84%;
+    }
+
+    .game > div 
+    {
+        font-size: 4.5vh;
     }
 
 }

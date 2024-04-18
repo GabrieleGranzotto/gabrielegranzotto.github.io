@@ -5,7 +5,7 @@
     font-size: 25px;
 }
 
-.table tr th
+.table > tr > th
 {
     padding: 10px 25px;
 }
@@ -32,7 +32,7 @@ h2
     font-size: 25px;
 }
 
-.aboutMe a img
+.aboutMe > a > img
 {
     height: 150px;
     padding:10px;

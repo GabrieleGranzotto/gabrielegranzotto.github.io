@@ -8,3 +8,4 @@ PROGETTI SITO WEB:
 -Programma per pubblicare articoli automaticamente
 -App salva vita  per persone agredite (panic button)
 -VariArticoli
+-Paragone ML/Termodinamica

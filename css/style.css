@@ -26,7 +26,7 @@ nav
     padding: 0 20px;
 }
 
-nav ul
+nav > ul
 {
     justify-content: center;
     align-items: end;
@@ -36,14 +36,14 @@ nav ul
     margin: 0;
 }
 
-nav ul li
+nav > ul > li
 {
     margin: 0 10px;
     height: 100%;
     padding: 10px;
 }
 
-nav ul li a
+nav > ul > li > a
 {
     text-decoration: none;
     color: rgb(197, 197, 197);
@@ -51,7 +51,7 @@ nav ul li a
     font-family: 'Work Sans';
 }
 
-nav ul li :hover
+nav > ul > li :hover
 {
     color: yellow;
 }
@@ -65,7 +65,7 @@ nav ul li :hover
     text-align: center;
 }
 
-.hero img
+.hero > img
 {
     height:60vh;
     width:100vw;
@@ -93,7 +93,7 @@ nav ul li :hover
     margin-bottom: 80px;
 }
 
-.articleslist a
+.articleslist > a
 {
     text-decoration: none;
 }
@@ -134,7 +134,7 @@ nav ul li :hover
     box-shadow: 0 0 40px 0 black;
 }
 
-.blockarticle img
+.blockarticle > img
 {
     width: 240px;
     height: 240px;
@@ -142,12 +142,12 @@ nav ul li :hover
     object-fit: cover;
 }
 
-.blockarticle div
+.blockarticle > div
 {
     margin: 0 30px;
 }
 
-.blockarticle div h1
+.blockarticle > div > h1
 {
     font-size: auto;
     color: rgb(234, 196, 68);
@@ -155,10 +155,18 @@ nav ul li :hover
     padding: 0;
 }
 
-.blockarticle div h2
+.blockarticle > div > h2
 {
     font-size: auto;
     font-style: oblique;
+}
+
+.blockarticle > div > div
+{
+    margin-left: 0;
+    font-size: 25px;
+    color: orange;
+    font-style: italic;
 }
 
 footer
@@ -171,19 +179,19 @@ footer
     padding-top: 50px;
 }
 
-footer ul
+footer > ul
 {
     text-align: center;
     list-style: none;
     align-items: center;
 }
 
-footer ul li
+footer > ul > li
 {
     padding: 5px;
 }
 
-footer ul li a
+footer > ul > li > a
 {
     text-decoration: none;
     color: rgb(197, 197, 197);
@@ -191,7 +199,7 @@ footer ul li a
     font-family: 'Work Sans';
 }
 
-footer ul li :hover
+footer > ul > li :hover
 {
     color: yellow;
 }
@@ -209,14 +217,14 @@ footer ul li :hover
         max-height: 10vh;
     }
 
-    nav a
+    nav > a
     {
         margin: 0 auto;
         width: 100%;
         height:100%
     }
 
-    nav a img
+    nav > a > img
     {
         display: block;
         margin: 0 auto;
@@ -224,7 +232,7 @@ footer ul li :hover
         height: 100%;
     }
 
-    nav ul
+    nav > ul
     {
         display: none;
     }
@@ -234,7 +242,7 @@ footer ul li :hover
         height: 90vh;
     }
 
-    .hero img
+    .hero > img
     {
         height: 90vh;
     }
@@ -244,6 +252,13 @@ footer ul li :hover
         background-color: rgb(51, 51, 51);
         display:grid;
         margin: 0;
+    }
+
+    .articleslist > a
+    {
+        margin-top: 15px;
+        margin-bottom: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.594) 60% , transparent);
     }
 
     .texttitle
@@ -265,11 +280,11 @@ footer ul li :hover
         display:block;
         width: 100vw;
         height: auto;
-        margin: 3vh 0;
+        margin: 0 0 3vh 0;
         padding: 0;
     }
 
-    .blockarticle img {
+    .blockarticle > img {
         width:100vw;
         height: 40vh;
         margin: 0;
@@ -277,19 +292,19 @@ footer ul li :hover
         object-fit:cover;
     }
 
-    .blockarticle div {
+    .blockarticle > div {
         padding: 2vh 1vh;
 
     }
 
-    .blockarticle div h1 {
+    .blockarticle > div > h1 {
         font-size: 3vh;
         color: rgb(234, 196, 68);
         font-weight: 700;
         padding: 0;
     }
 
-    .blockarticle div h2 {
+    .blockarticle > div > h2 {
         font-size: 2vh;
         font-style: oblique;
     }
@@ -301,12 +316,12 @@ footer ul li :hover
        height: auto;
    }
 
-   footer ul li 
+   footer > ul > li 
    {
        margin: 1vh;
    }
 
-   footer ul li a 
+   footer > ul > li > a 
    {
        font-size: 3vh;
    }
