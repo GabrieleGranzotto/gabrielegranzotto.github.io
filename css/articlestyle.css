@@ -7,24 +7,24 @@
     min-height: 1600px;
 }
 
-.content > article > h1
+article > h1
 {
-    font-size: 70px;
+    font-size: 100px;
     color: rgb(188, 65, 72);
     font-weight: 700;
     padding: 0;
     margin: 0;
 }
 
-.content > article > h2
+article > h2
 {
-    font-size: 30px;
+    font-size: 50px;
     color: rgb(168, 168, 168);
     font-style: oblique;
     font-weight: 300;
 }
 
-.content > article > h3
+.text > h3
 {
     font-size: 50px;
     color: darkred;
@@ -33,7 +33,7 @@
 .author
 {
     color: rgb(204, 204, 204);
-    font-size: 15px;
+    font-size: 35px;
     color: orange;
 }
 
@@ -50,7 +50,7 @@
     color: whitesmoke;
 }
 
-.content > img
+.cover > img
 {
     margin: 10px 0 20px 0;
     width:100vw;
@@ -100,9 +100,9 @@
         font-size: 7vw;
     }
 
-    .content > article > h3
+    .text > h3
     {
-        font-size: 13vw;
+        font-size: 12vw;
     }
 
     .author
