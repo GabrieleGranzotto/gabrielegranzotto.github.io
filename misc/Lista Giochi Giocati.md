@@ -119,6 +119,7 @@ output:
 - il Professor Layton e lo Scrigno di Pandora
 - Animal Crossing: Wild World
 - Doki Doki Literature Club
+- **Devotion**
 - Grim Fandango
 - Pokemon Smeraldo
 
