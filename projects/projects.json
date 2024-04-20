@@ -1,0 +1,32 @@
+{
+    "project1":
+    {
+        "url": "./DataAnalyticsProject.html",
+        "title": "Data Analytics",
+        "subtitle": "Analisi Auto per spiegare il Prezzo", 
+        "author": ["Gabriele Granzotto", "Sara Trabucco", "Cristiano Baldassi", "Davide Zorzetto"],
+        "date": "30/10/2023",
+        "cover":"../images/toycar.jpg", 
+        "language": "it"
+    },
+    "project2":
+    {
+        "url": "./DataBaseProject.html",
+        "title": "Database",
+        "subtitle": "Creazione Database Game Save", 
+        "author": ["Gabriele Granzotto"],
+        "date": "30/10/2023",
+        "cover":"../images/controller.jpg", 
+        "language": "it"
+    },
+    "project3":
+    {
+        "url": "https://github.com/GabrieleGranzotto/Euler-Method/blob/1f29898b35f6d6dd78049ce08bea4ffb11b7e69a/metodo_eulero.ipynb",
+        "title": "Euler Method",
+        "subtitle": "Disegna Equazioni Differenziali 2D", 
+        "author": ["Gabriele Granzotto", "Sara Trabucco"],
+        "date": "30/10/2023",
+        "cover":"../images/lorenz.jpg", 
+        "language": "it"
+    }
+}

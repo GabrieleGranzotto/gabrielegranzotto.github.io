@@ -1,0 +1,42 @@
+{
+    "article1":
+    {
+        "url": "./helloworld.html",
+        "title": "Hello, World!",
+        "subtitle": "Il mio primo articolo su questo sito", 
+        "author": ["Gabriele Granzotto"],
+        "date": "26/09/2023",
+        "cover":"../images/helloworldimage.jpg", 
+        "language": "it"
+    },
+    "article2":
+    {
+        "url": "./top100games.html",
+        "title": "Top 100 Games",
+        "subtitle": "I miei 100 giochi preferiti", 
+        "author": ["Gabriele Granzotto"],
+        "date": "10/04/2024",
+        "cover":"../images/top100cover.jpg",
+        "language": "it"
+    },
+    "article3":
+    {
+        "url": "./espressivitavideogioco.html",
+        "title": "Potenza Espressiva dei Videogiochi",
+        "subtitle": "I Videogiochi sono superiori nel trasmettere emozioni?", 
+        "author": ["Gabriele Granzotto"],
+        "date": "17/04/2024",
+        "cover":"../images/tlou.jpg",
+        "language": "it"
+    },
+    "article4":
+    {
+        "url": "./top10games.html",
+        "title": "Top 10 Videogiochi",
+        "subtitle": "I 10 miei giochi preferiti", 
+        "author": ["Gabriele Granzotto"],
+        "date": "18/04/2024",
+        "cover":"../images/top10games.webp",
+        "language": "it"
+    }
+}
