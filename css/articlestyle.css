@@ -39,8 +39,10 @@ article > h2
 
 .text > h3
 {
+    margin: 30px auto 0 auto;
     color:red;
     font-style: bold;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.594) 60%, transparent);
 }
 
 .text
@@ -50,13 +52,20 @@ article > h2
     color: whitesmoke;
 }
 
-.cover > img
+.content img
 {
     margin: 10px 0 20px 0;
     width:100vw;
     max-width:100%;
     object-fit: cover;
     aspect-ratio: 25/14;
+}
+
+.text img
+{
+    width: 100vw;
+    aspect-ratio: 21/9;
+    margin: 0 auto; 
 }
 
 .tag
