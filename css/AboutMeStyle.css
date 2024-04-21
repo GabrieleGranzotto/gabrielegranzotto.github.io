@@ -1,8 +1,12 @@
 .table
 {
-    margin: 50px auto;
+    margin: 0 auto;
     max-width: 60%;
     font-size: 25px;
+    --bs-table-bg: none;
+    --bs-table-border-color: none;
+    --bs-table-color: none;
+    border-collapse: separate;
 }
 
 .table > tr > th
