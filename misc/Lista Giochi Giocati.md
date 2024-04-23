@@ -119,12 +119,12 @@ output:
 - il Professor Layton e lo Scrigno di Pandora
 - Animal Crossing: Wild World
 - Doki Doki Literature Club
-- **Devotion**
+- Devotion
 - Grim Fandango
-- Pokemon Smeraldo
 
 ## 91-100
 
+- Pokemon Smeraldo
 - Dishonored: La Morte dell'Esterno
 - The Walking Dead: Definitive Edition
 - Detroit Become Human
@@ -134,10 +134,10 @@ output:
 - The Elden Scrolls V: Skyrim
 - Getting Over It
 - Monument Valley
-- Kena: Bridge of Spirit
 
 ## 101-110
 
+- Kena: Bridge of Spirit
 - Ape Out
 - Ghostrunner
 - Superliminal
@@ -147,10 +147,10 @@ output:
 - The Witcher 3: Wild Hunt
 - Ratchet & Clank 3
 - Jak 3
-- il Professor Layton e il Futuro Perduto
 
 ## 111-120
 
+- il Professor Layton e il Futuro Perduto
 - Baldur's Gate: Dark Alliance 2
 - Star Wars Jedi: Fallen Order
 - Life is Strange: True Color
@@ -160,10 +160,10 @@ output:
 - Dead Space
 - Dark Souls II
 - Cyberpunk 2077
-- Doom (2016)
 
 ## 121-130
 
+- Doom (2016)
 - Baba is You
 - Heart of Darkness
 - Metal Gear Solid: Peace Walker
@@ -173,10 +173,10 @@ output:
 - Hades
 - Assassin's Creed IV Black Flag
 - Ratchet & Clank: a Spasso nel Tempo
-- Metal: Hellsinger
 
 ## 131-140
 
+- Metal: Hellsinger
 - Crash Bandicoot: n'Sane Trilogy
 - Rayman
 - Champions 2: Return to Arms
@@ -186,10 +186,10 @@ output:
 - Keep Talking and Nobody Explodes
 - Spore
 - God of War: il Fantasma di Sparta
-- Titanfall 2
 
 ## 141-150
 
+- Titanfall 2
 - Obscure
 - New Super Mario Wii
 - God of War: Chains of Olympus
@@ -199,10 +199,10 @@ output:
 - Magicka
 - Assassin's Creed Brotherhood
 - Spyro: Reignated Trilogy
-- Shadow of Mordor
 
 ## 151-160
 
+- Shadow of Mordor
 - Ratchet & Clank 2: Fuoco a Volontà
 - Rise of the Tomb Raider
 - Batman: Arkham Asylum
@@ -212,10 +212,10 @@ output:
 - Super Meat Boy
 - Ratchet & Clank: Armi di Distruzione
 - Watch Dogs
-- Rayman 3: Hoodlum Havoc
 
 ## 161-170
 
+- Rayman 3: Hoodlum Havoc
 - Dead Space 2
 - Batman: Arkham City
 - Rayman 2: the Great Escape
@@ -225,10 +225,10 @@ output:
 - City Skylines
 - Tomb Raider
 - Dayz
-- The Sims 3
 
 ## 171-180
 
+- The Sims 3
 - Trine 2
 - Tomb Raider: Classics
 - Prototype
@@ -238,10 +238,10 @@ output:
 - Jak II: Renegade
 - Ape Escape
 - Prince of Persia: Spirito Gueriero
-- Disney's Hercules
 
 ## 181-190
 
+- Disney's Hercules
 - Sacred
 - Fallout: New Vegas
 - Skate 3
@@ -251,10 +251,10 @@ output:
 - Endless Space 2
 - Tomb Raider: Trilogy
 - Gex: Enter the Gecko
-- Pokemon Verde Foglia
 
 ## 191-200
 
+- Pokemon Verde Foglia
 - Prince of Persia: i Due Troni
 - Metroid: Zero Mission
 - Sacred 2
@@ -264,10 +264,10 @@ output:
 - The Sims 4
 - Oddworld: Abe's Oddysee
 - Super Seducer
-- Reigns
 
 ## 201-210
 
+- Reigns
 - Dagon
 - Darq
 - Phasmophobia
@@ -277,10 +277,10 @@ output:
 - Ratchet & Clank: l'Altezza Non Conta
 - Rage
 - Resident Evil 0
-- Battlefield 3
 
 ## 211-220
 
+- Battlefield 3
 - Deadlight: Director's Cut
 - Battlefield V
 - Dead Space 3
