@@ -101,7 +101,8 @@ nav > ul > li :hover
 .block
 {
     display: flex;
-    align-items: center;
+    width: 70vw;
+    margin: 0 auto;
     transition: 0.2s;
 }
 
@@ -117,7 +118,7 @@ nav > ul > li :hover
     display: inline-grid;
     grid-template-columns: 270px auto;
     height: 240px;
-    width: 80%;
+    width: 100%;
     max-width: 1400px;
     margin: 15px auto;
     padding-right: 40px;
