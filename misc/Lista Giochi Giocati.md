@@ -76,6 +76,7 @@ output:
 - Spec Ops: The Line
 - Brothers: A Tale of Two Sons
 - Gris
+- (Rakuen)
 - Fez
 - Minecraft
 - The Sims
@@ -283,6 +284,7 @@ output:
 - Battlefield 3
 - Deadlight: Director's Cut
 - Battlefield V
+- (Catherine)
 - Dead Space 3
 - Hello Neigbors
 - Lust for Darkness
