@@ -13,3 +13,12 @@
 - Kentucky Route Zero
 - Morkredd
 - Deadlight
+- Nier: Automata
+- Nier: Replicant
+- Slay the Princess
+- Return to Obra Dinn
+- Please, don't touch anything
+- Ghost of Tsushima
+- Resident Evil: Revelation
+- Rayman: Origin
+- Metroid: Zero Mission
