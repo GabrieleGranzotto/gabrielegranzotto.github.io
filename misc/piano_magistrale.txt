@@ -1,0 +1,24 @@
+1 year
+
+- Statistical Method
+- High Performance and Cloud Computing
+- Machine Learning Operations
+- Optimization for Artificial Intelligence
+
+- Probabilistic Machine Learning
+- Deep Learning
+- Reinforcement Learning
+- Ethic and Law of Data and Artificial Intelligence
+- Algorithmic Data Mining
+
+2 year
+
+- Computer Vision and Pattern Recognition
+- Unsupervised Learning
+- Multi-Agent Systems 
+	/ Symbolic and Neuro-Symbolic Artificial Intelligence
+- Stochastic Modelling and Simulation
+- Advanced Topics in Machine Learning
+
+- Internship
+- Thesis
