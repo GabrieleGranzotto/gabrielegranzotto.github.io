@@ -10,10 +10,11 @@ class ManageFile:
             data = json.load(files)
         self.token = data["token"]
         self.username = data["username"]
-        self.repo_url = f"https://{self.username}:{self.token}@github.com/{self.username}/{data["repo"]}"
+        repo = data["repo"]
+        self.repo_url = f"https://{self.token}@github.com/{self.username}/{repo}"
         self.actual_path = "../misc/"
 
-    def add(self, path_name=-1):
+    def add(self, path_name=-1, flag_commit=False):
         # take the path from command line or call the input command
         if path_name == -1:
             print("Argument not found, please insert here the file path that you want upload: ")
@@ -27,7 +28,8 @@ class ManageFile:
             exit()
 
         # take only the file name and format it in the right way
-        file_name = path_name.split(sep="/")[-1]
+        file_name = path_name.split(sep="/")[-1] # linux and mac version
+        file_name = file_name.split(sep="\\")[-1] # windows verision
         string = f"                    <li><a href=\"{file_name}\">{file_name}</a></li>\n"
 
         # open and read the JSON file
@@ -63,11 +65,11 @@ class ManageFile:
             print("File successfully updated!")
         #close the modified file
         files.close()
+        if flag_commit:
+            file_path = f"{self.actual_path}{file_name}"
+            self.commit(file_path)
 
-        file_path = f"{self.actual_path}{file_name}"
-        self.commit(file_path)
-
-    def remove(self, file_name=-1):
+    def remove(self, file_name=-1, flag_commit=False):
         # take the name of the file that has to remove from command line or call the input command
         if file_name == -1:
             print("Argument not found, please insert here the file name of the file you want remove: ")
@@ -111,26 +113,27 @@ class ManageFile:
         else:
             print("The file name is not present in the directory.")
         
-        file_path = f"{self.actual_path}{file_name}"
-        self.commit(file_path)
+        if flag_commit:
+            file_path = f"{self.actual_path}{file_name}"
+            self.commit(file_path)
         
 
     def commit(self, file_path):
         # commit of the actual file in the repository
         commit_message = "commit the file in the repository"
-        self._git_commit(file_path, commit_message, self.repo_url)
+        self._git_commit(file_path, commit_message)
         # commit of the html page in the repository
         html_path = "../misc/files.html"
         commit_message = "commit the html page in the repository"
-        self._git_commit(html_path, commit_message, self.repo_url)
+        self._git_commit(html_path, commit_message)
         # commit of the json file in the repository
         json_path = "../json/misc.json"
         commit_message = "commit the json file in the repository"
-        self._git_commit(json_path, commit_message, self.repo_url)
+        self._git_commit(json_path, commit_message)
 
-    def _git_commit(file_path, commit_message, repo_url):
+    def _git_commit(self, file_path, commit_message):
         try:
-            sp.run(["git", "remote", "set-url", "origin", repo_url], check=True)
+            sp.run(["git", "remote", "set-url", "origin", self.repo_url], check=True)
             sp.run(["git", "add", file_path], check=True)
             sp.run(["git", "commit", "-m", commit_message], check=True)
             sp.run(["git", "push"], check=True)
@@ -138,13 +141,15 @@ class ManageFile:
         except sp.CalledProcessError as e:
             print(f"Error during the execution of Git command: {e}")
 
-
-# file_path = "path/del/file"
-# git_commit(file_path, "commit trammite https e token", repo_url)
-
 try: 
     command = sys.argv[1]
-    path_file = sys.arg[2]
+    path_file = sys.argv[2]
+    have_commit = sys.argv[3]
+    if have_commit == "commit":
+        flag_commit = True
+    if have_commit == "local":
+        flag_commit = False
+
 except:
     print("Do you want to add or remove file? [add/remove]")
     command = input()
@@ -156,9 +161,11 @@ except:
         path_file = input()
     else:
         print("Command unknown!")
-    try:
-        flag_commit = sys.arg[3]
-    except:
+    print("Do you want to commit on Github? [y/n]")
+    have_commit = "y"
+    if have_commit == "y":
+        flag_commit = True
+    else:
         flag_commit = False
 
 manage = ManageFile()
