@@ -11,6 +11,7 @@ class ManageFile:
         self.token = data["token"]
         self.username = data["username"]
         self.repo_url = f"https://{self.username}:{self.token}@github.com/{self.username}/{data["repo"]}"
+        self.actual_path = "../misc/"
 
     def add(self, path_name=-1):
         # take the path from command line or call the input command
@@ -19,9 +20,8 @@ class ManageFile:
             path_name = input()
 
         # copy the file in the actual path
-        actual_path = "../misc/"
         try:
-            shutil.copy2(path_name, actual_path)
+            shutil.copy2(path_name, self.actual_path)
         except:
             print("File not found in this directory!")
             exit()
@@ -40,7 +40,6 @@ class ManageFile:
         else:
             in_list = False
             data["name"].append(file_name)
-
 
         if not in_list:
             # upload the modified list
@@ -62,9 +61,11 @@ class ManageFile:
             print("File successfully added!")
         else:
             print("File successfully updated!")
-
         #close the modified file
         files.close()
+
+        file_path = f"{self.actual_path}{file_name}"
+        self.commit(file_path)
 
     def remove(self, file_name=-1):
         # take the name of the file that has to remove from command line or call the input command
@@ -109,6 +110,23 @@ class ManageFile:
             print("deleted!")
         else:
             print("The file name is not present in the directory.")
+        
+        file_path = f"{self.actual_path}{file_name}"
+        self.commit(file_path)
+        
+
+    def commit(self, file_path):
+        # commit of the actual file in the repository
+        commit_message = "commit the file in the repository"
+        self._git_commit(file_path, commit_message, self.repo_url)
+        # commit of the html page in the repository
+        html_path = "../misc/files.html"
+        commit_message = "commit the html page in the repository"
+        self._git_commit(html_path, commit_message, self.repo_url)
+        # commit of the json file in the repository
+        json_path = "../json/misc.json"
+        commit_message = "commit the json file in the repository"
+        self._git_commit(json_path, commit_message, self.repo_url)
 
     def _git_commit(file_path, commit_message, repo_url):
         try:
