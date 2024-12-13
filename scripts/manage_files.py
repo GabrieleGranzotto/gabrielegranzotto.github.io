@@ -174,3 +174,5 @@ if command == "add":
 if command == "remove":
     manage.remove(path_file, flag_commit)
 
+    
+
