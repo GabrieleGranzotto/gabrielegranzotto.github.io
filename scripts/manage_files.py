@@ -173,6 +173,3 @@ if command == "add":
     manage.add(path_file, flag_commit)
 if command == "remove":
     manage.remove(path_file, flag_commit)
-
-    
-
