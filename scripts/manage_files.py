@@ -11,7 +11,7 @@ class ManageFile:
         self.token = data["token"]
         self.username = data["username"]
         repo = data["repo"]
-        self.repo_url = f"https://{self.token}@github.com/{self.username}/{repo}"
+        self.repo_url = f"https://github.com/{self.username}/{repo}"
         self.actual_path = "../misc/"
 
     def add(self, path_name=-1, flag_commit=False):
