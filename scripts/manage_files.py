@@ -118,21 +118,17 @@ class ManageFile:
         
 
     def commit(self, file_path):
-        # commit of the actual file in the repository
-        commit_message = "commit the file in the repository"
-        self._git_commit(file_path, commit_message)
-        # commit of the html page in the repository
+        # commit the modified files with manage_files.py in the repository
         html_path = "../misc/files.html"
-        commit_message = "commit the html page in the repository"
-        self._git_commit(html_path, commit_message)
-        # commit of the json file in the repository
         json_path = "../json/misc.json"
-        commit_message = "commit the json file in the repository"
-        self._git_commit(json_path, commit_message)
+        commit_message = "commit the modified files with manage_files.py in the repository"
+        file_list = [file_path, html_path, json_path]
+        self._git_commit(file_list, commit_message)
 
-    def _git_commit(self, file_path, commit_message):
+    def _git_commit(self, file_list, commit_message):
         try:
-            sp.run(["git", "add", file_path], check=True)
+            for file_path in file_list:
+                sp.run(["git", "add", file_path], check=True)
             sp.run(["git", "commit", "-m", commit_message], check=True)
             sp.run(["git", "push", "origin", "main"], check=True)
             print("Commit and Push succesfully done!")
