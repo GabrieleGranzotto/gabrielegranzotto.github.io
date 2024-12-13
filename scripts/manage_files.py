@@ -8,7 +8,6 @@ class ManageFile:
     def __init__(self):
         with open("../json/token.json", "r") as files:
             data = json.load(files)
-        self.token = data["token"]
         self.username = data["username"]
         repo = data["repo"]
         self.repo_url = f"https://github.com/{self.username}/{repo}"
@@ -133,7 +132,6 @@ class ManageFile:
 
     def _git_commit(self, file_path, commit_message):
         try:
-            #sp.run(["git", "remote", "set-url", "origin", self.repo_url], check=True)
             sp.run(["git", "add", file_path], check=True)
             sp.run(["git", "commit", "-m", commit_message], check=True)
             sp.run(["git", "push", "origin", "main"], check=True)
