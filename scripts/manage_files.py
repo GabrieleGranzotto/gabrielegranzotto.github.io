@@ -133,10 +133,10 @@ class ManageFile:
 
     def _git_commit(self, file_path, commit_message):
         try:
-            sp.run(["git", "remote", "set-url", "origin", self.repo_url], check=True)
+            #sp.run(["git", "remote", "set-url", "origin", self.repo_url], check=True)
             sp.run(["git", "add", file_path], check=True)
             sp.run(["git", "commit", "-m", commit_message], check=True)
-            sp.run(["git", "push"], check=True)
+            sp.run(["git", "push", "origin", "main"], check=True)
             print("Commit and Push succesfully done!")
         except sp.CalledProcessError as e:
             print(f"Error during the execution of Git command: {e}")
