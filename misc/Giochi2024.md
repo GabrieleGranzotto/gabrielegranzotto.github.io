@@ -22,3 +22,4 @@
 - Resident Evil: Revelation
 - Rayman: Origin
 - Metroid: Zero Mission
+- Little Nightmare
