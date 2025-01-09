@@ -23,3 +23,11 @@
 - Rayman: Origin
 - Metroid: Zero Mission
 - Little Nightmare
+- Firewatch
+- Balatro
+
+# Giochi giocati 2025
+
+- Inscryption
+- Resident Evil 6
+- Exo One
