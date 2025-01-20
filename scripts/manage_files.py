@@ -24,7 +24,7 @@ class ManageFile:
             shutil.copy2(path_name, self.actual_path)
         except:
             print("File not found in this directory!")
-            exit()
+            exit
 
         # take only the file name and format it in the right way
         file_name = path_name.split(sep="/")[-1] # linux and mac version
@@ -107,7 +107,7 @@ class ManageFile:
                 os.remove(f"../misc/{file_name}")
             except:
                 print("file can not be removed from the specified directory.")
-                exit()
+                exit
             print("deleted!")
         else:
             print("The file name is not present in the directory.")
@@ -145,22 +145,27 @@ try:
         flag_commit = False
 
 except:
-    print("Do you want to add or remove file? [add/remove]")
-    command = input()
-    if command=="add":
-        print("\nWhich is the path of the file?")
-        path_file = input()
-    if command=="remove":
-        print("\nWhich is the name of the file?")
-        path_file = input()
-    else:
-        print("Command unknown!")
-    print("Do you want to commit on Github? [y/n]")
-    have_commit = "y"
-    if have_commit == "y":
-        flag_commit = True
-    else:
-        flag_commit = False
+    try:
+        if sys.argv[1] == "-help":
+            print("Usage: python3 ./manage_files.py [add/remove] [path_file] [commit/local]")
+            exit
+    except:
+        print("Do you want to add or remove file? [add/remove]")
+        command = input()
+        if command=="add":
+            print("\nWhich is the path of the file?")
+            path_file = input()
+        if command=="remove":
+            print("\nWhich is the name of the file?")
+            path_file = input()
+        else:
+            print("Command unknown!")
+        print("Do you want to commit on Github? [y/n]")
+        have_commit = "y"
+        if have_commit == "y":
+            flag_commit = True
+        else:
+            flag_commit = False
 
 manage = ManageFile()
 if command == "add":
