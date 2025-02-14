@@ -31,3 +31,5 @@
 - Inscryption
 - Resident Evil 6
 - Exo One
+- The Cabin Factory
+- GTA V
