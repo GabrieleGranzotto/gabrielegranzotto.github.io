@@ -35,3 +35,13 @@
 - GTA V
 - a Game About Digging a Hole
 - Detention
+- Ori and the Will of the Wisps
+- Heavy Rain
+- The Last of Us Part II
+- Clair Obscure: Expedition 33
+- A Way Out
+- Bright Memory
+- Inmost
+- Black The Fall
+- Unravel
+- Inscryption
