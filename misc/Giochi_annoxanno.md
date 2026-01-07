@@ -38,6 +38,7 @@
 - Ori and the Will of the Wisps
 - Heavy Rain
 - The Last of Us Part II
+- A Plague Tale: Innocence
 - Clair Obscure: Expedition 33
 - A Way Out
 - Bright Memory
@@ -45,3 +46,23 @@
 - Black The Fall
 - Unravel
 - Inscryption
+- Bramble: the Mountain King
+- Batman: Arkham Knight
+- Just a To the Moon Series: Beach Episode
+- Horses
+- Manifold Garden
+- Resident Evil 7
+  
+# Giochi giocati 2026
+
+- Road 96
+- Deus Ex: Mankind Divided
+- No, I'm not a Human
+- The Pedestrian
+- Hollow Knight: Silksong
+- Trine 5: Clockwork Conspiracy
+- Neva
+- Jusant
+- Anno 1800
+- Cuphead
+- Wolfenstein II: the New Colossus
