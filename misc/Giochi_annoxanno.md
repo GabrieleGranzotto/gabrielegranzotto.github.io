@@ -28,6 +28,7 @@
 
 # Giochi giocati 2025
 
+- Adios
 - Inscryption
 - Resident Evil 6
 - Exo One
