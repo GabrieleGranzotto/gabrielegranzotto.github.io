@@ -70,3 +70,5 @@
 - Chuchel
 - Trine 5: Clockwork Conspiracy
 - Final Fantasy X
+- Jusant
+- Super Seducer 3

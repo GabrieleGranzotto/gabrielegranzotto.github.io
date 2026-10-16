@@ -284,7 +284,7 @@ output:
 - Battlefield 3
 - Deadlight: Director's Cut
 - Battlefield V
-- (Catherine)
+- Catherine
 - Dead Space 3
 - Hello Neigbors
 - Lust for Darkness
