@@ -72,3 +72,4 @@
 - Final Fantasy X
 - Jusant
 - Super Seducer 3
+- Red Dead Redemption
